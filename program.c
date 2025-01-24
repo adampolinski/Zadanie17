@@ -10,7 +10,11 @@ int main()
 {
     float a, b, h,r;
     int wybor;
+    while(1)
+    {
+
     printf ("Wybierz objetosc ktora chcesz obliczac\n");
+    printf ("0. wyjscie\n");
     printf ("1. objetosc prostopadloscian\n");
     printf ("2. objetosc kuli\n");
     printf ("wybor: ");
@@ -21,7 +25,7 @@ int main()
     printf ("Podaj promien kuli\n");
     scanf ("%f", &r);
     printf("\nObjetosc kuli: %f", ball_volume(r));
-
+    printf("\n");
     }
     else if (wybor==1)
     {
@@ -35,8 +39,12 @@ int main()
    scanf("%f", &h);
 
    printf("\nObjetosc prostopadloscianu: %f\n", cuboid_volume(a, b, h));
+   printf("\n");
+    } else
+    {
+        return 0;
     }
 
-
+    }
     return 0;
 }
